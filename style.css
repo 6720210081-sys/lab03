@@ -361,8 +361,7 @@ img {
 
 /* ใช้ gradient แทนรูปก่อน */
 .project-card__img--1 {
-    background: linear-gradient(135deg, #06B6D4,
-            #8B5CF6);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdipBJ4rFnmA1gbL0wgvz7p5fGGo6Az0Bw3TgcMfQB0l76Lw7Ucy4h8xKx&s=10);
 }
 
 .project-card__img--2 {
@@ -482,4 +481,16 @@ img {
     .section {
         padding: 48px 0;
     }
+}
+.about__img {
+    width: 250px; /* ปรับขนาดตามต้องการ */
+    height: 200px;
+    overflow: hidden; /* ป้องกันไม่ให้รูปภาพล้นออกมานอกวงกลม */
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ช่วยให้รูปภาพไม่เบี้ยว โดยจะตัดส่วนเกินออกให้พอดีกับกรอบ */
 }
